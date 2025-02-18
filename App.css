@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, footer {
+  padding: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #000;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+.product-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-item h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-item p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.fa-star {
+  color: #ddd;
+  font-size: 20px;
+}
+
+.fa-star.active {
+  color: orange;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
